@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="email=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+  <meta itemprop="share_url" content="url" />
+  <meta itemprop="image" content="url" />
+  <meta itemprop="share_pic_url" content="" />
+  <meta itemprop="name" content="悦动圈" />
+  <meta itemprop="description" content="悦动圈，走路就能领红包" />
+  <meta itemprop="wx_circle" content="悦动圈" />
+  <meta itemprop="wb_content" content="悦动圈" />
+  <meta itemprop="qq_title" content="" />
+  <meta itemprop="qq_content" content="" />
+  <meta itemprop="qzone_title" content="" />
+  <meta itemprop="qzone_content" content="" />
+  <meta itemprop="screen_shots_flag" content="" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="email=no">
+  <meta name="format-detection" content="address=no">
+  <link rel="dns-prefetch" href="//ydcommon.51yund.com">
+  <link rel="dns-prefetch" href="//ssl-pubpic.51yund.com">
+  <link rel="dns-prefetch" href="//17yd-common.51yund.com">
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <% htmlWebpackPlugin.options.cdn.js.forEach(cdnURL => { %>
+  <script src="<%= cdnURL %>"></script>
+  <% }) %>
+</body>
+
+</html>
